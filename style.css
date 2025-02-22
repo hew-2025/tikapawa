@@ -382,7 +382,7 @@ top: 8px;
 }
 video{
 	display: block;
-	max-width: 80%;
+	width: 80%;
 	margin: 30px auto;
 	padding: 5%;
 	background-color: #f3adc5;
