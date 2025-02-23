@@ -92,7 +92,9 @@ opacity:0;
 }
 .logo{
 	text-transform: uppercase;
-	max-width: 40%;
+	/*max-width: 40%;*/
+	/*ロゴの幅を可変から固定にする（headerの高さを固定するため、そもそもPC時のheaderの高さが高すぎてメインビジュアルを圧迫しているのでもっとコンパクトにしたい）*/
+	width: 180px; /*サイズは適当につけているので変更可*/
 }
 .logo img{
 	display: block;
@@ -161,6 +163,9 @@ opacity:0;
 /*main*/
 .main{
 	margin: auto;
+		padding: 120px 0 0 0; /*paddingでheader分の上の余白を取る 変更可*/
+	background-color: #f3adc5; /*背景色を.mainの領域に追加　その分.top_imgから削除*/
+
 }
 .top_img{
 	margin: auto;
@@ -304,7 +309,7 @@ top: 8px;
 	padding-bottom: 40px;
 	p {
 		margin: auto;
-		color: #000;
+		color: #f3adc5;
 		font-size: 18px;
 		text-align: center;
 		&:last-of-type {
@@ -400,6 +405,7 @@ top: 8px;
 }
 .works_wave{
 	display: block;
+	background-color: #fff;
 }
 #works{
 	background-color: #f3adc5;
@@ -452,6 +458,10 @@ top: 8px;
 }
 
 /*vodeo*/
+#video-col{
+	background-color: #fff;
+	padding-bottom: 50px;
+}
 #video-col h2,#video-col h3{
 	color: #f3adc5;
 	text-align: center;
@@ -459,7 +469,7 @@ top: 8px;
 video{
 	display: block;
 	width: 80%;
-	margin: 30px auto;
+	margin: auto;
 	padding: 5%;
 	background-color: #f3adc5;
 	border-radius: 20px;
