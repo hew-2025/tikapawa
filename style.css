@@ -256,7 +256,7 @@ top: 8px;
 	text-align: center;
 	background-color: #b2e4e2;
 	border-radius: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 70px;
 	&:hover {
 		cursor: pointer;
 		opacity: 0.8;
