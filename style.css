@@ -95,6 +95,7 @@ opacity:0;
 	/*max-width: 40%;*/
 	/*ロゴの幅を可変から固定にする（headerの高さを固定するため、そもそもPC時のheaderの高さが高すぎてメインビジュアルを圧迫しているのでもっとコンパクトにしたい）*/
 	width:20%; /*サイズは適当につけているので変更可*/
+	margin: auto;
 }
 .logo img{
 	display: block;
@@ -219,6 +220,7 @@ opacity:0;
 #member img{
 	max-width: 80%;
 	margin: 20px auto;
+	margin-top: 40px;
 }
 .kozin{
 	font-size: 2em;
@@ -256,7 +258,6 @@ top: 8px;
 	text-align: center;
 	background-color: #b2e4e2;
 	border-radius: 15px;
-	margin-bottom: 70px;
 	&:hover {
 		cursor: pointer;
 		opacity: 0.8;
@@ -306,7 +307,6 @@ top: 8px;
 
 .details-content {
 	padding: 20px;
-	padding-bottom: 40px;
 	p {
 		margin: auto;
 		color: #f3adc5;
@@ -316,6 +316,9 @@ top: 8px;
 			margin: 0 0 0;
 		}
 	}
+}
+.js-details{
+	margin-bottom: 40px;
 }
 
 /*works*/
@@ -480,7 +483,7 @@ video{
 
 /*toplink*/
 /*リンクの形状*/
-#page-top a{
+.Page-top a{
 	display: flex;
 	justify-content:center;
 	align-items:center;
@@ -496,12 +499,12 @@ video{
 	transition:all 0.3s;
 }
 
-#page-top a:hover{
+.Page-top a:hover{
 	background: #2a7577;
 }
 
 /*リンクを右下に固定*/
-#page-top {
+.Page-top {
 	position: fixed;
 	right: 10px;
 	bottom:10px;
