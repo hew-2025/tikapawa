@@ -114,6 +114,7 @@ $(accordionSummary).each(function() {
 $("セレクタ").slick();
 $(".slide-items").slick({
   autoplay: true, // 自動再生
+	autoplaySpeed: 6000,
 });
 $(function () {
     $(".test-slick").slick({
