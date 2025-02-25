@@ -94,12 +94,12 @@ opacity:0;
 	text-transform: uppercase;
 	/*max-width: 40%;*/
 	/*ロゴの幅を可変から固定にする（headerの高さを固定するため、そもそもPC時のheaderの高さが高すぎてメインビジュアルを圧迫しているのでもっとコンパクトにしたい）*/
-	width:20%; /*サイズは適当につけているので変更可*/
+	width:22%; /*サイズは適当につけているので変更可*/
 	margin: auto;
 }
 .logo img{
 	display: block;
-	padding-left: 10px;
+	padding-left: 25px;
 }
 /*==================================================
 　5-2-1 3本線が×に
@@ -115,6 +115,7 @@ opacity:0;
     height:50px;
 	border-radius: 5px;
 	right: 30px;
+	top: 0;
 }
 
 /*ボタン内側*/
