@@ -1,6 +1,17 @@
-$(".openbtn").click(function () {
-    $(this).toggleClass('active');
+
+
+$(function(){
+  $('.openbtn').on('click', function(){
+    $('.menu').toggleClass('is-active');
+  });
+
+  $(".menu__link").click(function () {
+    $(".openbtn").removeClass("is-active");
+    $(".menu").removeClass("is-active");
+  });
+  // function
 });
+
 
 //テキストのカウントアップ+バーの設定
 var bar = new ProgressBar.Line(splash_text, {//id名を指定
