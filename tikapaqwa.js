@@ -2,12 +2,15 @@
 
 $(function(){
   $('.openbtn').on('click', function(){
-    $('.menu').toggleClass('is-active');
+    $(this).toggleClass('active');
+  });
+	  $('.openbtn').on('click', function(){
+    $('.menu').toggleClass('active');
   });
 
   $(".menu__link").click(function () {
-    $(".openbtn").removeClass("is-active");
-    $(".menu").removeClass("is-active");
+    $(".openbtn").removeClass("active");
+    $(".menu").removeClass("active");
   });
   // function
 });
