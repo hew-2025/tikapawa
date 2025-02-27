@@ -649,9 +649,22 @@ top: 8px;
 	color: #998b52;
 	text-align: center;
 }
-
-
+@media screen and (min-width:481px){
+	.logo{
+		width: 20%;
+	}
+	.menu__item{
+		margin-top: 15px;
+	}
+	.modal-content{
+		width: 50%;
+		margin:auto;
+	}
+}
 @media screen and (min-width:960px){
+	.pc-flex{
+		display: flex;
+	}
 	.logo{
 		margin: 0;
 	}
@@ -667,8 +680,8 @@ top: 8px;
 	}
 	.navi{
 		display: block;
-    width: 35%;
-    margin-right: 10px;
+		width: 35%;
+		margin-right: 30px;
 	}
 	.navi ul{
 		display: flex;
@@ -679,7 +692,7 @@ top: 8px;
 	}
 	.navi li a{
 		display: block;
-		padding: 2px 10px;
+		padding: 2px 10px10px 10px;
 		text-decoration: none;
 		color: #fff;
 		position: relative;
@@ -708,5 +721,10 @@ top: 8px;
 	.navi li a:hover::after {
 		transform: scale(1, 1);/*X方向にスケール拡大*/
 	}
-
+	.Page-top a {
+		width: 120px;
+		height: 120px;
+		border-radius: 100px;
+		font-size: 1.3rem;
+	}
 }
