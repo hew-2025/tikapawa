@@ -102,6 +102,9 @@ opacity:0;
 	display: block;
 	padding-left: 25px;
 }
+.navi{
+	display: none;
+}
 /*==================================================
 　5-2-1 3本線が×に
 ===================================*/
@@ -648,3 +651,62 @@ top: 8px;
 }
 
 
+@media screen and (min-width:960px){
+	.logo{
+		margin: 0;
+	}
+	.logo img{
+		max-width: 40%;
+	}
+	.modal-content{
+		width: 80%;
+		margin:auto;
+	}
+	.openbtn{
+		display: none;
+	}
+	.navi{
+		display: block;
+    width: 35%;
+    margin-right: 10px;
+	}
+	.navi ul{
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.navi li a{
+		display: block;
+		padding: 2px 10px;
+		text-decoration: none;
+		color: #fff;
+		position: relative;
+		text-transform: uppercase;
+	}
+	.navi li.current a,
+	.navi li a:hover{
+		color:#FFE2EC;
+	}
+	.navi li a::after{
+		content: '';
+		/*絶対配置で線の位置を決める*/
+		position: absolute;
+		bottom: 0;
+		left: 10%;
+		/*線の形状*/
+		width: 80%;
+		height: 2px;
+		background: #fff;
+		/*アニメーションの指定*/
+		transition: all .3s;
+		transform: scale(0, 1);/*X方向0、Y方向1*/
+		transform-origin: left top;/*上部中央基点*/
+	}
+	.navi li.current a::after,
+	.navi li a:hover::after {
+		transform: scale(1, 1);/*X方向にスケール拡大*/
+	}
+
+}
