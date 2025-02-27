@@ -137,3 +137,25 @@ $(function () {
         // ~~~
     });
 });
+
+
+
+
+$(document).ready(function() {
+    $('.clickable-image').on('click', function() {
+        var src = $(this).attr('src');
+        $('body').append(
+            '<div class="modal">' +
+            '<span class="close">&times;</span>' +
+            '<img class="modal-content" src="' + src + '">' +
+            '</div>'
+        );
+        $('.modal').fadeIn();
+
+        $('.close').on('click', function() {
+            $('.modal').fadeOut(function() {
+                $(this).remove();
+            });
+        });
+    });
+});
